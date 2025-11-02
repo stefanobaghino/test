@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>Frontend</h1>
+    <button id="fetchBtn">Fetch Hello World</button>
+    <div id="message"></div>
+
+    <script>
+        document.getElementById('fetchBtn').addEventListener('click', async () => {
+            try {
+                const response = await fetch('http://localhost:8080/api/hello');
+                const text = await response.text();
+                document.getElementById('message').textContent = text;
+            } catch (error) {
+                document.getElementById('message').textContent = 'Error: ' + error.message;
+            }
+        });
+    </script>
+</body>
+</html>
