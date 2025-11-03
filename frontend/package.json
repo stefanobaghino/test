@@ -4,7 +4,11 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "build": "echo 'Build complete'"
+    "build": "echo 'Build complete'",
+    "test": "jest"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }

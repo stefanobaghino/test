@@ -15,6 +15,7 @@ node_modules/
 npm-debug.log
 yarn-error.log
 **/nodejs/
+coverage/
 
 # OS
 .DS_Store
