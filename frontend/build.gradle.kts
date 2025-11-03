@@ -16,3 +16,8 @@ tasks.register<com.github.gradle.node.npm.task.NpmTask>("start") {
     dependsOn("npmInstall")
     args = listOf("start")
 }
+
+tasks.register<com.github.gradle.node.npm.task.NpmTask>("test") {
+    dependsOn("npmInstall")
+    args = listOf("run", "test")
+}
