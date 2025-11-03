@@ -1,0 +1,21 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+**/nodejs/
+
+# OS
+.DS_Store
+Thumbs.db
